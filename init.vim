@@ -23,29 +23,11 @@ set ignorecase
 set incsearch
 set smartcase
 
-" tab缩进
-set tabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
-
-set t_Co=256
-filetype indent on
-
-" 插件配置
 call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'connorholyday/vim-snazzy'
 Plug 'neoclide/coc.nvim'
 
 call plug#end()
-
-colorscheme snazzy
-
-" 设置状态栏主题风格
-let g:SnazzyTransparent = 1
-let g:Powerline_colorscheme='solarized256'
->
