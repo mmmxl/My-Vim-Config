@@ -23,11 +23,40 @@ set ignorecase
 set incsearch
 set smartcase
 
-call plug#begin()
+" tab缩进
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set smarttab
+
+set t_Co=256
+filetype indent on
+
+set formatoptions-=cro
+
+" 插件配置
+call plug#begin("~/.config/nvim/plugged")
 
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'neoclide/coc.nvim'
+Plug 'connorholyday/vim-snazzy'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'plasticboy/vim-markdown'
+Plug 'Yggdroot/indentLine'
 
 call plug#end()
+
+colorscheme snazzy
+
+" 缩进线插件配置
+let g:indentLine_enabled = 1
+let g:indentLine_concealcursor = 'inc'
+let g:indentLine_conceallevel = 2
+
+" 设置状态栏主题风格
+let g:SnazzyTransparent = 1
+let g:lightline = {
+\ 'colorscheme': 'snazzy',
+\ }
+let g:Powerline_colorscheme='solarized256'
