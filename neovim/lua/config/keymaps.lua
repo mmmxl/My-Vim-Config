@@ -8,6 +8,6 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>") --  More convenient exit
 keymap.set("n", "<leader>a", ":keepjumps normal! ggVG<cr>") -- select all text
 keymap.set({ "n", "v", "o" }, "H", "^")
-keymap.set("n", "L", "$")
+keymap.set({ "n", "v", "o" }, "L", "$")
 keymap.set("n", "gu", "gU") -- normal upperCase
 keymap.set("n", "gl", "gu") -- nromal lowerCase
