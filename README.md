@@ -1,7 +1,6 @@
 # My-VIm-Config
 
 ```bash
-```bash
  
 mkdir ~/.config || cd ~/.config/
 
